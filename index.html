@@ -20,7 +20,8 @@
             }
             return key;
         }
-	async function next(frame, key)
+	  // I would like to apologize for this ugly piece of shit code
+ 	async function next(frame, key)
 	{
 		xhr = new XMLHttpRequest();
 			   xhr.open("GET", `http://127.0.0.1:5000/process?sleep=${key}&frame=${frame}`);
